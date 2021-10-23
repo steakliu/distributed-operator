@@ -1,0 +1,12 @@
+##connection-timeout session-timeout调德大一点，因为小的话会在项目启动时报连不上的错，然后会重新连上（不影响启动）。这是版本问题
+
+server:
+  port: 8089
+
+u2-lock:
+  address: 116.198.160.39:2181
+  connection-timeout: 1500000000
+  session-timeout: 600000
+  retry-policy: retry-forever
+  retry-forever:
+    retry-interval-ms: 3000

@@ -1,0 +1,5 @@
+spring:
+  redis:
+    host: 101.200.54.149
+    port: 6379
+    password: xiaosi520

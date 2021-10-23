@@ -1,0 +1,61 @@
+{
+  "groups": [
+    {
+      "name": "u2-lock.pattern",
+      "type": "java.lang.String",
+      "description": "redis pattern",
+      "defaultValue": "SINGLE"
+    }
+  ],
+
+  "properties": [
+    {
+      "name": "u2-lock.pattern",
+      "type": "java.lang.String",
+      "description": "redis pattern",
+      "defaultValue": "single"
+    },
+    {
+      "name": "u2-lock.address",
+      "type": "java.lang.String",
+      "description": "redis address",
+      "defaultValue": "redis://127.0.0.1:6379"
+    },
+    {
+      "name": "u2-lock.password",
+      "type": "java.lang.String",
+      "description": "redis password",
+      "defaultValue": "123456"
+    },
+    {
+      "name": "u2-lock.database",
+      "type": "java.lang.Integer",
+      "description": "redis database",
+      "defaultValue": "0"
+    },
+    {
+      "name": "u2-lock.connectionPoolSize",
+      "type": "java.lang.Integer",
+      "description": "redis connectionPoolSize",
+      "defaultValue": "10"
+    },
+    {
+      "name": "u2-lock.idleSize",
+      "type": "java.lang.Integer",
+      "description": "redis idleSize",
+      "defaultValue": "10"
+    },
+    {
+      "name": "u2-lock.IdleConnectionTimeout",
+      "type": "java.lang.Integer",
+      "description": "redis IdleConnectionTimeout",
+      "defaultValue": "60000"
+    },
+    {
+      "name": "u2-lock.connectionTimeout",
+      "type": "java.lang.Integer",
+      "description": "redis connectionTimeout",
+      "defaultValue": "30000"
+    }
+  ]
+}

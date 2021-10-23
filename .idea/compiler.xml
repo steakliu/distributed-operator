@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="repeat-submit-lock-demo" />
+        <module name="repeat-submit-lock" />
+        <module name="u2-lock" />
+        <module name="redission-distribute-lock-demo" />
+        <module name="redis-distribute-lock" />
+        <module name="zookeeper-distribute-lock-starter" />
+        <module name="zookeeper-distribute-lock-demo" />
+        <module name="redisson-distribute-lock-starter" />
+        <module name="redis-distribute-lock-demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="redis-distribute-lock" target="1.8" />
+      <module name="redis-distribute-lock-demo" target="1.8" />
+      <module name="redission-distribute-lock-demo" target="1.8" />
+      <module name="redisson-distribute-lock-starter" target="1.8" />
+      <module name="repeat-submit-lock" target="1.8" />
+      <module name="repeat-submit-lock-demo" target="1.8" />
+      <module name="u2-lock" target="8" />
+      <module name="zookeeper-distribute-lock-demo" target="1.8" />
+      <module name="zookeeper-distribute-lock-starter" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="redis-distribute-lock" options="-parameters" />
+      <module name="redis-distribute-lock-demo" options="-parameters" />
+      <module name="redission-distribute-lock-demo" options="-parameters" />
+      <module name="redisson-distribute-lock-starter" options="-parameters" />
+      <module name="repeat-submit-lock" options="-parameters" />
+      <module name="repeat-submit-lock-demo" options="-parameters" />
+      <module name="zookeeper-distribute-lock-demo" options="-parameters" />
+      <module name="zookeeper-distribute-lock-starter" options="-parameters" />
+    </option>
+  </component>
+</project>

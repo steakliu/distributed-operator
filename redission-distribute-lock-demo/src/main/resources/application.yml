@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+
+########使用红锁，使用红锁需要指定任意一个redis服务的address , password , red-lock为redis地址+password
+#u2-lock:
+#  pattern: RED_LOCK
+#  password: xiaosi520
+#  address: redis://101.200.54.149:6379
+#  red-lock:
+#    - "redis://101.200.54.149:6379,xiaosi520"
+#    - "redis://116.198.160.39:6379,123456"
+u2-lock:
+  pattern: SINGLE
+  password: xiaosi520
+  address: redis://101.200.54.149:6379
+#    - "redis://127.0.0.1:7000,123456"

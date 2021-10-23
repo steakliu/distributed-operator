@@ -1,0 +1,17 @@
+{
+
+  "properties": [
+    {
+      "name": "repeat-submit.identity",
+      "type": "java.lang.String",
+      "description": "identity",
+      "defaultValue": "token"
+    },
+    {
+      "name": "repeat-submit.identity-location",
+      "type": "java.lang.String",
+      "description": "location",
+      "defaultValue": "header"
+    }
+  ]
+}

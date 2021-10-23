@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/redis-distribute-lock/redis-distribute-lock.iml" filepath="$PROJECT_DIR$/redis-distribute-lock/redis-distribute-lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis-distribute-lock-demo/redis-distribute-lock-demo.iml" filepath="$PROJECT_DIR$/redis-distribute-lock-demo/redis-distribute-lock-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redission-distribute-lock-demo/redission-distribute-lock-demo.iml" filepath="$PROJECT_DIR$/redission-distribute-lock-demo/redission-distribute-lock-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisson-distribute-lock-starter/redisson-distribute-lock-starter.iml" filepath="$PROJECT_DIR$/redisson-distribute-lock-starter/redisson-distribute-lock-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/repeat-submit-lock/repeat-submit-lock.iml" filepath="$PROJECT_DIR$/repeat-submit-lock/repeat-submit-lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/repeat-submit-lock-demo/repeat-submit-lock-demo.iml" filepath="$PROJECT_DIR$/repeat-submit-lock-demo/repeat-submit-lock-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/u2-lock.iml" filepath="$PROJECT_DIR$/.idea/u2-lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zookeeper-distribute-lock-demo/zookeeper-distribute-lock-demo.iml" filepath="$PROJECT_DIR$/zookeeper-distribute-lock-demo/zookeeper-distribute-lock-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zookeeper-distribute-lock-starter/zookeeper-distribute-lock-starter.iml" filepath="$PROJECT_DIR$/zookeeper-distribute-lock-starter/zookeeper-distribute-lock-starter.iml" />
+    </modules>
+  </component>
+</project>

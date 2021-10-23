@@ -1,0 +1,241 @@
+{
+  "groups": [
+    {
+      "name": "u2-lock.address",
+      "type": "java.lang.String",
+      "description": "zookeeper address",
+      "defaultValue": "127.0.0.1:2181"
+    },
+    {
+      "name": "u2-lock.connection-timeout",
+      "type": "java.lang.Integer",
+      "description": "zookeeper connection timeout",
+      "defaultValue": 1500000000
+    },
+    {
+      "name": "u2-lock.session-timeout",
+      "type": "java.lang.Integer",
+      "description": "zookeeper session timeout",
+      "defaultValue": 600000
+    },
+    {
+      "name": "u2-lock.retry-policy",
+      "type": "java.lang.String",
+      "description": "zookeeper retry policy",
+      "defaultValue": "exponential_back_off_retry"
+    },
+    {
+      "name": "u2-lock.exponential-back-off-retry",
+      "type": "com.u2.zklock.properties.policy.ZkExponentialBackoffRetryProperties",
+      "sourceType": "com.u2.zklock.properties.CuratorFrameworkProperties",
+      "sourceMethod": "getExponentialBackoffRetry()"
+    },
+    {
+      "name": "u2-lock.exponential-back-off-retry.base-sleep-time-ms",
+      "type": "java.lang.Integer",
+      "description": "base-sleep-time-ms",
+      "defaultValue": 1000
+    },
+    {
+      "name": "u2-lock.exponential-back-off-retry.max-sleep-ms",
+      "type": "java.lang.Integer",
+      "description": "max-sleep-ms",
+      "defaultValue": 1000
+    },
+    {
+      "name": "u2-lock.exponential-back-off-retry.max-retries",
+      "type": "java.lang.Integer",
+      "description": "max-retries",
+      "defaultValue": 1000
+    },
+
+
+    {
+      "name": "u2-lock.retry-forever",
+      "type": "com.u2.zklock.properties.policy.ZkRetryForeverProperties",
+      "sourceType": "com.u2.zklock.properties.CuratorFrameworkProperties",
+      "defaultValue": "getRetryForever()"
+    },
+    {
+      "name": "u2-lock.retry-forever.retry-interval-ms",
+      "type": "java.lang.Integer",
+      "description": "retry-interval-ms",
+      "sourceType": "com.u2.zklock.properties.policy.ZkRetryForeverProperties",
+      "defaultValue": 3000
+    },
+
+
+    {
+      "name": "u2-lock.retry-n-times",
+      "type": "com.u2.zklock.properties.policy.ZkRetryNTimesProperties",
+      "description": "retry_n_times",
+      "defaultValue": "getRetryNTimes()"
+    },
+    {
+      "name": "u2-lock.retry-n-times.n",
+      "type": "java.lang.Integer",
+      "description": "n",
+      "defaultValue": 3
+    },
+    {
+      "name": "u2-lock.retry-n-times.sleep-ms-between-retries",
+      "type": "java.lang.Integer",
+      "description": "sleepMsBetweenRetries",
+      "defaultValue": 3
+    },
+
+
+    {
+      "name": "u2-lock.retry-one-time",
+      "type": "com.u2.zklock.properties.policy.ZkRetryOneTimeProperties",
+      "description": "retry_one_time",
+      "defaultValue": "getRetryOneTime()"
+    },
+    {
+      "name": "u2-lock.retry-one-time.sleep-ms-between-retries",
+      "type": "java.lang.Integer",
+      "description": "sleep-ms-between-retries",
+      "defaultValue": 3
+    },
+
+
+    {
+      "name": "u2-lock.retry-until-elapsed",
+      "type": "com.u2.zklock.properties.policy.ZkRetryUntilElapsedProperties",
+      "description": "retry_until_elapsed",
+      "defaultValue": "getRetryUntilElapsed()"
+    },
+    {
+      "name": "u2-lock.retry_until-elapsed.max-elapsed-time-ms",
+      "type": "java.lang.Integer",
+      "description": "sleep-ms-between-retries",
+      "defaultValue": 3000
+    },
+    {
+      "name": "u2-lock.retry-until-elapsed.sleep-ms-between-retries",
+      "type": "java.lang.Integer",
+      "description": "sleep-ms-between-retries",
+      "defaultValue": 3000
+    }
+  ],
+
+  "properties": [
+    {
+      "name": "u2-lock.address",
+      "type": "java.lang.String",
+      "description": "zookeeper address",
+      "defaultValue": "127.0.0.1:2181"
+    },
+    {
+      "name": "u2-lock.connection-timeout",
+      "type": "java.lang.Integer",
+      "description": "zookeeper connection timeout",
+      "defaultValue": 2000
+    },
+    {
+      "name": "u2-lock.session-timeout",
+      "type": "java.lang.Integer",
+      "description": "zookeeper session timeout",
+      "defaultValue": 2000
+    },
+    {
+      "name": "u2-lock.retry-policy",
+      "type": "java.lang.String",
+      "description": "zookeeper retry policy",
+      "defaultValue": "exponential_back_off_retry"
+    },
+    {
+      "name": "u2-lock.exponential-back-off-retry",
+      "type": "com.u2.zklock.properties.policy.ZkExponentialBackoffRetryProperties",
+      "sourceType": "com.u2.zklock.properties.CuratorFrameworkProperties",
+      "sourceMethod": "getExponentialBackoffRetry()"
+    },
+    {
+      "name": "u2-lock.exponential-back-off-retry.base-sleep-time-ms",
+      "type": "java.lang.Integer",
+      "description": "base-sleep-time-ms",
+      "defaultValue": 1000
+    },
+    {
+      "name": "u2-lock.exponential-back-off-retry.max-sleep-ms",
+      "type": "java.lang.Integer",
+      "description": "max-sleep-ms",
+      "defaultValue": 1000
+    },
+    {
+      "name": "u2-lock.exponential-back-off-retry.max-retries",
+      "type": "java.lang.Integer",
+      "description": "max-retries",
+      "defaultValue": 1000
+    },
+
+
+    {
+      "name": "u2-lock.retry-forever",
+      "type": "com.u2.zklock.properties.policy.ZkRetryForeverProperties",
+      "sourceType": "com.u2.zklock.properties.CuratorFrameworkProperties",
+      "defaultValue": "getRetryForever()"
+    },
+    {
+      "name": "u2-lock.retry-forever.retry-interval-ms",
+      "type": "java.lang.Integer",
+      "description": "retry-interval-ms",
+      "sourceType": "com.u2.zklock.properties.policy.ZkRetryForeverProperties",
+      "defaultValue": 3000
+    },
+
+
+    {
+      "name": "u2-lock.retry-n-times",
+      "type": "com.u2.zklock.properties.policy.ZkRetryNTimesProperties",
+      "description": "retry_n_times",
+      "defaultValue": "getRetryNTimes()"
+    },
+    {
+      "name": "u2-lock.retry-n-times.n",
+      "type": "java.lang.Integer",
+      "description": "n",
+      "defaultValue": 3
+    },
+    {
+      "name": "u2-lock.retry-n-times.sleep-ms-between-retries",
+      "type": "java.lang.Integer",
+      "description": "sleepMsBetweenRetries",
+      "defaultValue": 3
+    },
+
+
+    {
+      "name": "u2-lock.retry-one-time",
+      "type": "com.u2.zklock.properties.policy.ZkRetryOneTimeProperties",
+      "description": "retry_one_time",
+      "defaultValue": "getRetryOneTime()"
+    },
+    {
+      "name": "u2-lock.retry-one-time.sleep-ms-between-retries",
+      "type": "java.lang.Integer",
+      "description": "sleep-ms-between-retries",
+      "defaultValue": 3
+    },
+
+
+    {
+      "name": "u2-lock.retry-until-elapsed",
+      "type": "com.u2.zklock.properties.policy.ZkRetryUntilElapsedProperties",
+      "description": "retry_until_elapsed",
+      "defaultValue": "getRetryUntilElapsed()"
+    },
+    {
+      "name": "u2-lock.retry-until-elapsed.max-elapsed-time-ms",
+      "type": "java.lang.Integer",
+      "description": "sleep-ms-between-retries",
+      "defaultValue": 3000
+    },
+    {
+      "name": "u2-lock.retry-until-elapsed.sleep-ms-between-retries",
+      "type": "java.lang.Integer",
+      "description": "sleep-ms-between-retries",
+      "defaultValue": 3000
+    }
+  ]
+}
