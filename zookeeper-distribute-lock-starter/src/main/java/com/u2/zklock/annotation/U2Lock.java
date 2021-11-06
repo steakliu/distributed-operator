@@ -17,7 +17,7 @@ public @interface U2Lock {
      */
     String lockName() default "";
     /**
-     * 锁类型-默认为可重入排他锁
+     * 锁类型
      * @return
      */
     LockType lockType() default LockType.MUTEX_LOCK;
@@ -26,7 +26,7 @@ public @interface U2Lock {
      */
     long requireTime() default 30000;
     /**
-     * 单位
+     * 时间单位
      */
     TimeUnit unit() default TimeUnit.MILLISECONDS;
 }

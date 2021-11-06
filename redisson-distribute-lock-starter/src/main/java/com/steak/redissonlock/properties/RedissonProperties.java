@@ -23,7 +23,7 @@ public class RedissonProperties {
     private Integer database;
     private Integer connectionPoolSize;
     private Integer idleSize;
-    private Integer IdleConnectionTimeout;
+    private Integer idleConnectionTimeout;
     private Integer connectionTimeout;
     private Integer timeout;
     private String masterName;
@@ -43,7 +43,7 @@ public class RedissonProperties {
         this.address = "redis://127.0.0.1:6379";
         this.database = 0;
         this.idleSize = 10;
-        this.IdleConnectionTimeout = 60000;
+        this.idleConnectionTimeout = 60000;
         this.connectionTimeout = 30000;
         this.timeout = 10000;
         this.connectionPoolSize = 10;
@@ -107,11 +107,11 @@ public class RedissonProperties {
     }
 
     public Integer getIdleConnectionTimeout() {
-        return IdleConnectionTimeout;
+        return idleConnectionTimeout;
     }
 
     public void setIdleConnectionTimeout(Integer idleConnectionTimeout) {
-        IdleConnectionTimeout = idleConnectionTimeout;
+        this.idleConnectionTimeout = idleConnectionTimeout;
     }
 
     public Integer getConnectionTimeout() {

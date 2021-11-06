@@ -14,4 +14,5 @@ u2-lock:
   pattern: SINGLE
   password: xiaosi520
   address: redis://101.200.54.149:6379
-#    - "redis://127.0.0.1:7000,123456"
+  idle-connection-timeout: 6000
+  idle-size: 10
