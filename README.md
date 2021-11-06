@@ -1,10 +1,10 @@
 ## 简介  
 
-u2-lock提供了基于redis,zookeeper的声明式分布式锁，防重提交，在不同的只需要引入相应的starter，进行简单的配置便可使用
+u2-lock提供了一些分布式系统中常用的组件，解决方案，原理讲解，只需简单的配置便可使用
 
 
-### zookeeper分布式锁
-
+### zookeeper分布式锁  
+[基于zookeeper的分布式锁原理](https://gitee.com/ken-xue/u2-lock/blob/master/zookeeper-distribute-lock-starter/README.md)
 锁注解
 ```
 public @interface U2Lock {
