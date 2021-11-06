@@ -1,11 +1,11 @@
 ## 简介  
 
-u2-lock提供了一些分布式系统中常用的组件，解决方案，原理讲解，只需简单的配置便可使用
+u2-distributed-operator提供了一些分布式系统中常用的组件，解决方案，原理讲解，只需简单的配置便可使用
 
 
 ### zookeeper分布式锁  
-[基于zookeeper的分布式锁原理](https://gitee.com/ken-xue/u2-lock/blob/master/zookeeper-distribute-lock-starter/README.md)
-锁注解
+[基于zookeeper的分布式锁原理](https://gitee.com/ken-xue/u2-lock/blob/master/zookeeper-distribute-lock-starter/README.md)  
+注解
 ```
 public @interface U2Lock {
     /**
