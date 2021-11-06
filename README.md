@@ -55,7 +55,7 @@ u2-lock:
     }
 ```
 
-###Redisson分布式锁  
+### Redisson分布式锁  
 注解  
 ```
 public @interface U2Lock {
@@ -120,3 +120,46 @@ red-lock:
     }
 ```
 
+### 防重提交  
+基于redis
+注解  
+```
+public @interface U2RepeatSubmit {
+    /**
+     * 锁接口时间
+     * @return
+     */
+    long lockTime() default 1000L;
+    /**
+     * 时间单位
+     * @return
+     */
+    TimeUnit unit() default TimeUnit.MILLISECONDS;
+    /**
+     * 消息提醒
+     * @return
+     */
+    String msg() default "请勿重复提交";
+
+}
+```
+yml  
+```
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+repeat-submit: #防重提交
+  identity: token  #唯一标识
+  identity-location: header #参数位置 可为请求头header , 会话session ， 请求参数parameter 
+```
+
+使用
+```
+@U2RepeatSubmit(lockTime = 2000)
+    @GetMapping("submit")
+    public void submit(@RequestParam("uid") String uid){
+        
+    }
+```

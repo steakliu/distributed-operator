@@ -17,7 +17,7 @@ public class RepeatSubmitController {
 
     @U2RepeatSubmit(lockTime = 2000)
     @GetMapping("submit")
-    public String submit(@RequestParam("uid") String uid){
-        return "防重提交测试";
+    public void submit(@RequestParam("uid") String uid){
+
     }
 }
